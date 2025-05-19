@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>セミナーLP</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: #fff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      text-align: left;
+      display: inline-block;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    thead {
+      background-color: #f0f0f0;
+    }
+
+    .cta-button {
+      background-color: #e91e63;
+      color: white;
+      padding: 14px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 30px;
+    }
+
+    .cta-button:hover {
+      background-color: #d81b60;
+    }
+
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    input[type="submit"],
+    button[type="submit"],
+    input.confirm_button {
+      background-color: #000 !important;
+      color: #fff !important;
+      font-weight: bold !important;
+      padding: 14px 24px !important;
+      font-size: 16px !important;
+      border: none !important;
+      border-radius: 6px !important;
+      cursor: pointer;
+    }
+
+    /* フォームの不要な空白や説明文を削除 */
+    .regist_form > div:first-of-type {
+      display: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 0 !important;
+      line-height: 0 !important;
+    }
+
+    /* 「必須」アイコンを整形 */
+    label.required img,
+    label.required::before,
+    label.required::after {
+      display: none !important;
+      content: none !important;
+    }
+
+    label.required {
+      position: relative;
+    }
+
+    label.required::after {
+      content: "必須";
+      background-color: #e60033;
+      color: #fff;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 2px 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<section>
+  <h1>“またお願いされる”占い師になれたら──</h1>
+  <p>
+    鑑定のたびに感謝されて、<br>
+    リピートだけで予定が埋まり、<br>
+    収入も安定して、占いの仕事に誇りが持てる。<br>
+    そんな未来を実現している人たちが、実はもうたくさんいます。
+  </p>
+  <a href="#form" class="cta-button">今すぐセミナーに申し込む</a>
+</section>
+
+<section id="form" style="background-color: #fff7e6;">
+  <h2>セミナーに申し込む</h2>
+  <div class="regist_form"></div>
+  <script src="https://skiam.jp/js/jquery-1.7.1.min.js"></script>
+  <script src="https://skiam.jp/jss/dynamic_form/DcKGxvzt/a.js"></script>
+</section>
+
+</body>
+</html>
