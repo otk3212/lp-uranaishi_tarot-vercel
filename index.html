@@ -14,18 +14,15 @@
       color: #333;
       background: #fff;
     }
-
     section {
       padding: 60px 20px;
       max-width: 800px;
       margin: 0 auto;
       text-align: center;
     }
-
     h1, h2 {
       margin-bottom: 20px;
     }
-
     ul {
       list-style: none;
       padding: 0;
@@ -33,23 +30,19 @@
       text-align: left;
       display: inline-block;
     }
-
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
     }
-
     th, td {
       border: 1px solid #ccc;
       padding: 10px;
       text-align: center;
     }
-
     thead {
       background-color: #f0f0f0;
     }
-
     .cta-button {
       background-color: #e91e63;
       color: white;
@@ -60,16 +53,13 @@
       display: inline-block;
       margin-top: 30px;
     }
-
     .cta-button:hover {
       background-color: #d81b60;
     }
-
     .highlight {
       color: red;
       font-weight: bold;
     }
-
     input[type="submit"],
     button[type="submit"],
     input.confirm_button {
@@ -82,8 +72,25 @@
       border-radius: 6px !important;
       cursor: pointer;
     }
-
-    /* フォームの不要な空白や説明文を削除 */
+    .free_form_header,
+    .explanation_area,
+    .section_header,
+    .regist_form > div:first-child,
+    .regist_form div[id^="free_area"],
+    .regist_form .form_header,
+    .regist_form .form_header + div,
+    .regist_form h3,
+    .regist_form p,
+    .regist_form div:has(> ul),
+    .regist_form > div:has(> ul),
+    .regist_form > div:has(> p),
+    .regist_form > div:has(> h3) {
+      display: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 0 !important;
+      line-height: 0 !important;
+    }
     .regist_form > div:first-of-type {
       display: none !important;
       margin: 0 !important;
@@ -91,19 +98,18 @@
       height: 0 !important;
       line-height: 0 !important;
     }
-
-    /* 「必須」アイコンを整形 */
+    .regist_form > div:first-of-type + div {
+      margin-top: 0 !important;
+    }
     label.required img,
     label.required::before,
     label.required::after {
       display: none !important;
       content: none !important;
     }
-
     label.required {
       position: relative;
     }
-
     label.required::after {
       content: "必須";
       background-color: #e60033;
